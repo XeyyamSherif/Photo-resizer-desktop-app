@@ -45,7 +45,7 @@ class ListWidget(QListWidget):
                         optimize=True,
                         quality=30,
                     )
-                else:
+                else: 
                     im = Image.open(url.toString())
                     filename = os.path.basename(url.toString())
                     filename_without_ext = os.path.splitext(filename)
