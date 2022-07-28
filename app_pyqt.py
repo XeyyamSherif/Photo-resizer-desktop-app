@@ -41,7 +41,7 @@ class ListWidget(QListWidget):
                     filename = os.path.basename(url.toLocalFile())
                     filename_without_ext = os.path.splitext(filename)
                     im.save(
-                        filename_without_ext[0] + "_compressed" + ".jpg",
+                        filename_without_ext[0] + ".jpg",
                         optimize=True,
                         quality=30,
                     )
